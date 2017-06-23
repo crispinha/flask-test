@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<head>
+    <title>Message</title>
+    <link href="/static/main.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+    The current message is:
+    <br>
+    {{ message }}
+    <br>
+    To submit a message, please fill out the form below.
+    <form action="#" method="post">
+        <div>
+            <label for="message">
+                <input type="text" id="message" name="message">
+            </label>
+        </div>
+        <div class="button">
+            <button type="submit">Send</button>
+        </div>
+    </form>
+</body>
