@@ -4,10 +4,12 @@
     <link href="/static/main.css" type="text/css" rel="stylesheet" />
 </head>
 <body>
-    The current message is:
-    <br>
-    {{ message }}
-    <br>
+    The messages are:
+    <ul>
+    {% for item in message %}
+        <li>{{ item }}</li>
+    {% endfor %}
+    </ul>
     To submit a message, please fill out the form below.
     <form action="#" method="post">
         <div>
